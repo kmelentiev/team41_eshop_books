@@ -4,10 +4,67 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App title -->
+    <title>Responsive Pure CSS Menu</title>
+    <!-- Link CSS file -->
     <link rel="stylesheet" href="style.css">
-    <title>Worldbooks CZ</title>
 </head>
 <body>
-    
+    <!-- Navigation bar -->
+    <header class="header">
+        <!-- Logo -->
+        <a href="#" class="logo">LR</a>
+        <!-- Hamburger icon -->
+        <input class="side-menu" type="checkbox" id="side-menu"/>
+        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
+        <!-- Menu -->
+        <nav class="nav">
+            <ul class="menu">
+                <li><a href="#">Gallery</a></li>
+                <li><a href="#">Blog</a> </li>
+                <li><a href="#">About</a></li>
+            </ul>
+        </nav>
+    </header>
+    <!-- Main content -->
+    <main>
+        <section class="reccomend">
+            <h2>
+                <a href="#" class="">Doporučujeme</a>
+            </h2>
+            <section class="products-swiper">
+                <section class="product-card">
+                    <a href="">
+                        <img src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
+                    </a>
+                    <section class="product-card_main">
+                        <h2>It Ends At Midnight</h2>
+                        <a href="#" class="product-card__author">Tyce, Harriet</a>
+                    </section>
+                </section> 
+                <section class="product-card">
+                    <a href="">
+                        <img src="https://img.megabooks.cz/97805933/9780593321447.jpg" alt="Sea of Tranquility">
+                    </a>
+                    <section class="product-card_main">
+                        <h2>Sea of Tranquility</h2>
+                        <a href="#" class="product-card__author">Mandel, Emily St. John</a>
+                    </section>
+                </section> 
+                <section class="product-card">
+                    <a href="">
+                        <img src="https://img.megabooks.cz/97802415/9780241529720.1.jpg" alt="Why Has Nobody Told Me This Before?">
+                    </a>
+                    <section class="product-card_main">
+                        <h2>Why Has Nobody Told Me This Before?</h2>
+                        <a href="#" class="product-card__author">Smith, Julie</a>
+                    </section>
+                </section> 
+            </section>
+        </section>
+    </main>
+    <footer>
+        <p>This website was created for the study purpose.</p>
+    </footer>
 </body>
 </html>
