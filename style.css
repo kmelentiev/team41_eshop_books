@@ -25,6 +25,10 @@ a{
 }
 ul{
     list-style: none;
+
+}
+ul.menu {
+    background-color: #E6DCD3;
 }
 
 /* Header */
