@@ -54,11 +54,13 @@ form {
     position: relative;
     width: 300px;
     margin: 0 auto;
+
 }
 input, button {
     border: none;
     outline: none;
-    border-radius: 3px;
+    border-radius: 20px;
+
 }
 input {
     width: 100%;
