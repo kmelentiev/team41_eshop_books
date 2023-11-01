@@ -67,6 +67,7 @@ input {
     height: 42px;
     background: #ffffff;
     padding-left: 15px;
+    padding-top: 15%;
 }
 button {
     height: 26px;
@@ -95,7 +96,7 @@ button:before {
 .menu a{
     display: block;
     padding: 30px;
-    color: var(--white);
+    color: var(--black);
 }
 .menu a:hover{
     background-color: var(--gray);
@@ -169,7 +170,7 @@ button:before {
         position: relative;
         float: right;
         width: fit-content;
-        background-color: transparent;
+        background-color: var(--silver-coyote);
     }
     .menu li{
         float: left;
