@@ -11,7 +11,7 @@
 </head>
 <body>
     <!-- Navigation bar -->
-    <header class="header">
+    <header class="universal">
         <!-- Logo -->
         <img alt="Books" src="pictures/Books.png" class="logo" >
         <!-- Search -->
@@ -19,13 +19,15 @@
             <input type="text" placeholder="">
             <button type="submit"></button>
         </form>
-        <!-- Hamburger icon -->
-        <input class="side-menu" type="checkbox" id="side-menu"/>
-        <label class="hamb" for="side-menu"><span class="hamb-line"></span></label>
         <!-- Signing in -->
+        <div class="cart-btn">
+            <img src="pictures/shopping-cart.png" alt="Cart" class="img-btn">
+        </div>
+    </header>
 
+    <header class="desktop">
         <!-- Menu -->
-        <nav class="nav">
+        <nav class="flex-container">
             <ul class="menu">
                 <li><a href="#">Romance</a></li>
                 <li><a href="#">Detective</a> </li>
@@ -33,83 +35,84 @@
                 <li><a href="#">Young adult </a></li>
                 <li><a href="#">Education</a></li>
             </ul>
-        </nav>
+        </nav>        
     </header>
     <!-- Main content -->
     <main>
         <h2>
             <a href="#" class="">New Releases</a>
         </h2>
-        <div class="swiper-wrapper">
-            <div class="swiper-container">
-              <div class="swiper-item" id="1">
-                <div class="product-card-photo">
-                    <a href="">
-                        <img class="photo" src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
-                    </a>
+        <div class="wrapper">
+            <article class="card">
+                <img src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
+                <div class="card__content">
+                    <h3>It Ends At Midnight</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non consequat urna. Sed quis tempor.</p>
+                    <p class="card_link"><a href="#">Buy</a></p>
                 </div>
-                <div class="product-card_main">
-                    <h2>It Ends At Midnight</h2>
-                    <a href="#" class="product-card__author">Tyce, Harriet</a>
+            </article>
+            <article class="card">
+                <img src="https://img.megabooks.cz/97805933/9780593321447.jpg" alt="Sea of Tranquility">
+                <div class="card__content">
+                    <h3>Sea of Tranquility</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non consequat urna. Sed quis tempor.</p>
+                    <p class="card_link"><a href="#">Buy</a></p>
                 </div>
-              </div>
-              <div class="swiper-item" id="2">
-                <div class="product-card-photo">
-                    <a href="">
-                        <img src="https://img.megabooks.cz/97805933/9780593321447.jpg" alt="Sea of Tranquility">
-                    </a>
+            </article>
+            <article class="card">
+                <img src="https://img.megabooks.cz/97802415/9780241529720.1.jpg" alt="Why Has Nobody Told Me This Before?">
+                <div class="card__content">
+                    <h3>Why Has Nobody Told Me This Before?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non consequat urna. Sed quis tempor.</p>
+                    <p class="card_link"><a href="#">Buy</a></p>
                 </div>
-                <h2>Sea of Tranquility</h2>
-                <a href="#" class="product-card__author">Mandel, Emily St. John</a>
-              </div>
-              <div class="swiper-item" id="3">
-                <div class="product-card-photo">
-                    <a href="">
-                        <img src="https://img.megabooks.cz/97802415/9780241529720.1.jpg" alt="Why Has Nobody Told Me This Before?">
-                    </a>
+            </article>
+            <article class="card">
+                <img src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
+                <div class="card__content">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                    <p class="card_link"><a href="#">Buy</a></p>
                 </div>
-                <h2>Why Has Nobody Told Me This Before?</h2>
-                <a href="#" class="product-card__author">Smith, Julie</a>
-              </div>
-            </div>
-          </div>
-
+            </article>
+        </div>
         <h2>
             <a href="#" class="">We recommend</a>
         </h2>
-        <div class="swiper-wrapper">
-            <div class="swiper-container">
-              <div class="swiper-item" id="1">
-                <div class="product-card-photo">
-                    <a href="">
-                        <img class="photo" src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
-                    </a>
+        <div class="wrapper">
+            <article class="card">
+                <img src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
+                <div class="card__content">
+                    <h3>It Ends At Midnight</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non consequat urna. Sed quis tempor.</p>
+                    <p class="card_link"><a href="#">Buy</a></p>
                 </div>
-                <div class="product-card_main">
-                    <h2>It Ends At Midnight</h2>
-                    <a href="#" class="product-card__author">Tyce, Harriet</a>
+            </article>
+            <article class="card">
+                <img src="https://img.megabooks.cz/97805933/9780593321447.jpg" alt="Sea of Tranquility">
+                <div class="card__content">
+                    <h3>Sea of Tranquility</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non consequat urna. Sed quis tempor.</p>
+                    <p class="card_link"><a href="#">Buy</a></p>
                 </div>
-              </div>
-              <div class="swiper-item" id="2">
-                <div class="product-card-photo">
-                    <a href="">
-                        <img src="https://img.megabooks.cz/97805933/9780593321447.jpg" alt="Sea of Tranquility">
-                    </a>
+            </article>
+            <article class="card">
+                <img src="https://img.megabooks.cz/97802415/9780241529720.1.jpg" alt="Why Has Nobody Told Me This Before?">
+                <div class="card__content">
+                    <h3>Why Has Nobody Told Me This Before?</h3>
+                    <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Aenean non consequat urna. Sed quis tempor.</p>
+                    <p class="card_link"><a href="#">Buy</a></p>
                 </div>
-                <h2>Sea of Tranquility</h2>
-                <a href="#" class="product-card__author">Mandel, Emily St. John</a>
-              </div>
-              <div class="swiper-item" id="3">
-                <div class="product-card-photo">
-                    <a href="">
-                        <img src="https://img.megabooks.cz/97802415/9780241529720.1.jpg" alt="Why Has Nobody Told Me This Before?">
-                    </a>
+            </article>
+            <article class="card">
+                <img src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
+                <div class="card__content">
+                    <h3>Title</h3>
+                    <p>Description</p>
+                    <p class="card_link"><a href="#">Buy</a></p>
                 </div>
-                <h2>Why Has Nobody Told Me This Before?</h2>
-                <a href="#" class="product-card__author">Smith, Julie</a>
-              </div>
-            </div>
-          </div>
+            </article>
+        </div>
         <div class="footer">
             <div class="content">
                 <div class="Worldbooks">

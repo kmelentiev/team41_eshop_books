@@ -6,7 +6,7 @@
     --silver-coyote: #E6DCD3;
     --light-bluish-grey: #B4A79E;
     --pale-grey-brown: #BDA18C7;
-    --dark-grey-brown: #3F352C;
+    --dark-grey-brown: #3F352C
     --black: #000000;
 } /* variables*/
 
@@ -26,52 +26,27 @@ a{
 }
 ul{
     list-style: none;
-
-}
-ul.menu {
-    background-color: #E6DCD3;
 }
 
-/* Header */
-.header{
-    background-color: var(--light-bluish-grey);
-    box-shadow: 1px 1px 5px 0px var(--gray);
-    position: sticky;
-    top: 0;
-    width: 100%;
-}
-/* Logo */
-.logo{
-    display: inline-block;
-    color: var(--black);
-    font-size: 40px;
-    margin-left: 10px;
-    height:32px;
-}
 /* Search */
-* {box-sizing: border-box;}
 form {
     position: relative;
     width: 300px;
     margin: 0 auto;
-
 }
 input, button {
     border: none;
     outline: none;
     border-radius: 20px;
-
 }
 input {
     width: 100%;
-    height: 42px;
+    height: 32px;
     background: #ffffff;
-    padding-left: 15px;
-    padding-top: 15%;
 }
 button {
-    height: 26px;
-    width: 26px;
+    height: 20px;
+    width: 20px;
     position: absolute;
     top: 8px;
     right: 8px;
@@ -85,92 +60,56 @@ button:before {
     font-size: 20px;
     font-weight: bold;
 }
-/* Nav menu */
-.nav{
-    width: 100%;
-    height: 100%;
-    position: fixed;
-    background-color: var(--black);
-    overflow: hidden;
+
+.img-btn {
+    width: 36px;
+    padding-right: 10px;
 }
+
+/* Header flex */
+header {
+    position: sticky;
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    background-color: var(--light-bluish-grey);
+}
+
+header a {
+    text-decoration: none;
+    color: #555;
+    transition: all 0.3s ease 0s;
+}
+
+
+/* Nav menu */
 .menu a{
     display: block;
     padding: 30px;
     color: var(--black);
 }
-.menu a:hover{
-    background-color: var(--gray);
-}
-.nav{
-    max-height: 0;
-    transition: max-height .5s ease-out;
-}
 
-
-/* Menu Icon */
-.hamb{
-    cursor: pointer;
-    float: right;
-    padding: 20px 20px;
-}/* Style label tag */
-
-.hamb-line {
-    background: var(--white);
-    display: block;
-    height: 2px;
-    position: relative;
-    width: 24px;
-
-} /* Style span tag */
-
-.hamb-line::before,
-.hamb-line::after{
-    background: var(--white);
-    content: '';
-    display: block;
-    height: 100%;
-    position: absolute;
-    transition: all .2s ease-out;
-    width: 100%;
+.flex-container {
+    display: flexbox;
+    flex-direction: row;
 }
-.hamb-line::before{
-    top: 5px;
+  
+  /* Responsive layout - makes a one column layout instead of a two-column layout */
+@media (max-width: 650px) {
+    .flex-container {
+      flex-direction: column;
+    }
 }
-.hamb-line::after{
-    top: -5px;
-}
-
-.side-menu {
-    display: none;
-} /* Hide checkbox */
-
-
-/* Toggle menu icon */
-.side-menu:checked ~ nav{
-    max-height: 100%;
-}
-.side-menu:checked ~ .hamb .hamb-line {
-    background: transparent;
-}
-.side-menu:checked ~ .hamb .hamb-line::before {
-    transform: rotate(-45deg);
-    top:0;
-}
-.side-menu:checked ~ .hamb .hamb-line::after {
-    transform: rotate(45deg);
-    top:0;
-}
-
 
 /* Responsiveness */
 @media (min-width: 768px) {
-    .nav{
+    nav{
         max-height: none;
         top: 0;
         position: relative;
         float: right;
         width: fit-content;
-        background-color: var(--silver-coyote);
+        background-color: transparent;
     }
     .menu li{
         float: left;
@@ -178,41 +117,39 @@ button:before {
     .menu a:hover{
         background-color: transparent;
         color: var(--gray);
-
-    }
-
-    .hamb{
-        display: none;
     }
 }
 
-
-.swiper-wrapper {
-    display: block;
-    width: 100%;
-    height: 90%;
+.wrapper {
     overflow: scroll;
-    overflow-y: hidden;
+    display: grid;
+    grid-template-columns: repeat(4, minmax(250px, 1fr));
+    /* grid-gap: 16px; */
+    width: 100%;
 }
-.swiper-container {
-    display: inline-flex;
-    overflow: hidden;
-}
-.swiper-item {
-    width: 300px;
-    height: 600px;
+
+.card {
+    display: flex;
+    flex-direction: column;
     border: 2px solid #000000;
     margin: 10px;
     padding: 24px 24px;
 }
 
-/* * {
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-  } */
+.card__content {
+    flex-grow: 1;
+    display: flex;
+    flex-direction: column;
+}
+
+.card_link {
+    margin-top: auto;
+}
+
+
+
   
-  .footer {
+.footer {
     background-color: black;
     color: #fefefe;
     position: relative;
@@ -220,42 +157,42 @@ button:before {
     bottom: 0;
     left: 0;
     margin-top: auto;
-  }
+}
   
-  .footer .content {
+.footer .content {
     display: flex;
     justify-content: space-evenly;
     margin: 1.5rem;
-  }
+}
   
-  .footer .content p {
+.footer .content p {
     margin-bottom: 1.3rem;
-  }
+}
   
-  .footer .content a {
+.footer .content a {
     text-decoration: none;
     color: #fefefe;
-  }
+}
   
-  .footer .content a:hover {
+.footer .content a:hover {
     border-bottom: 1px solid #971717;
-  }
+}
   
-  .footer .content h4 {
+.footer .content h4 {
     margin-bottom: 1.3rem;
     font-size: 19px;
-  }
+}
   
-  footer {
+footer {
     text-align: center;
     padding-bottom: 2rem;
-  }
+}
   
-  footer hr {
+footer hr {
     margin: 2rem 0;
-  }
+}
   
-  @media (max-width: 900px) {
+@media (max-width: 900px) {
     .footer .content {
       display: flex;
       flex-direction: column;
@@ -265,4 +202,4 @@ button:before {
     .footer {
       position: unset;
     }
-  }
+}
