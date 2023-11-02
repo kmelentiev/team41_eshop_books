@@ -75,6 +75,14 @@ header {
     background-color: var(--light-bluish-grey);
 }
 
+.desktop {
+    background: var(--silver-coyote)
+}
+
+.desktop a {
+    margin-inline: 30px;
+}
+
 header a {
     text-decoration: none;
     transition: all 0.3s ease 0s;
@@ -87,6 +95,7 @@ header a {
     padding: 20px;
     color: var(--black);
     /* outline: 2px solid var(--light-bluish-grey); */
+
 }
 
 .flex-container {
@@ -162,7 +171,13 @@ header a {
 .footer .content {
     display: flex;
     justify-content: space-evenly;
+    gap: 100px;
     margin: 1.5rem;
+    padding: 1rem;
+}
+
+.about-footer{
+    padding-right: 20px;
 }
   
 .footer .content p {
@@ -197,14 +212,14 @@ footer hr {
       display: flex;
       flex-direction: column;
       font-size: 14px;
+      gap: 10px;
+      padding: 1rem;
     }
   
     .footer {
       position: unset;
     }
 }
-
-
 
 .grid-category { 
     display: grid;
@@ -223,7 +238,7 @@ footer hr {
     padding: 0 20px 20px;
 }
 .card-category > button {
-    background: gray;
+    background: var(--light-bluish-grey);
     border: 0;
     color: white;
     padding: 10px;
