@@ -34,7 +34,7 @@ form {
     width: 300px;
     margin: 0 auto;
 }
-input, button {
+input, .search-btn {
     border: none;
     outline: none;
     border-radius: 20px;
@@ -44,7 +44,7 @@ input {
     height: 32px;
     background: var(--white);
 }
-button {
+.search-btn {
     height: 20px;
     width: 20px;
     position: absolute;
@@ -53,7 +53,7 @@ button {
     background: #F15B42;
     cursor: pointer;
 }
-button:before {
+.search-btn:before {
     content: "\f105";
     font-family: FontAwesome;
     color: var(--white);
@@ -202,4 +202,30 @@ footer hr {
     .footer {
       position: unset;
     }
+}
+
+
+
+.grid-category { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+}
+.grid-category > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+}
+.grid > article img {
+    max-width: 100%;
+}
+.card-category {
+    padding: 0 20px 20px;
+}
+.card-category > button {
+    background: gray;
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
 }
