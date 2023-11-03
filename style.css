@@ -1,7 +1,7 @@
 /* Theming */
 @import url("https://fonts.googleapis.com/css2?family=Poppins:wght@400;700&display=swap"); /* import font */
 
-:root{
+:root {
     --white: #ffffff;
     --silver-coyote: #E6DCD3;
     --light-bluish-grey: #B4A79E;
@@ -11,20 +11,22 @@
 } /* variables*/
 
 /* Reset */
-*{
+* {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
-body{
+
+body {
     background-color: var(--white);
     font-family: "Poppins", sans-serif;
 }
-a{
+
+a {
     text-decoration: none;
     color: var(--black);
 }
-ul{
+ul {
     list-style: none;
 }
 
@@ -34,16 +36,19 @@ form {
     width: 300px;
     margin: 0 auto;
 }
+
 input, .search-btn {
     border: none;
     outline: none;
     border-radius: 20px;
 }
+
 input {
     width: 100%;
     height: 32px;
     background: var(--white);
 }
+
 .search-btn {
     height: 20px;
     width: 20px;
@@ -53,6 +58,7 @@ input {
     background: #F15B42;
     cursor: pointer;
 }
+
 .search-btn:before {
     content: "\f105";
     font-family: FontAwesome;
@@ -110,7 +116,7 @@ header a {
     }
 }
 
-/* Responsiveness */
+/* Nav menu Responsiveness */
 @media (min-width: 768px) {
     nav{
         max-height: none;
@@ -129,6 +135,7 @@ header a {
     }
 }
 
+/* Carousel */
 .wrapper {
     overflow: scroll;
     display: grid;
@@ -155,9 +162,43 @@ header a {
     margin-top: auto;
 }
 
+/* Category Card */
 
+.grid-category { 
+    display: grid;
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+    grid-gap: 20px;
+    align-items: stretch;
+}
 
-  
+.grid-category > article {
+    border: 1px solid #ccc;
+    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    display: grid;
+    align-items: right;
+    justify-content: right;
+}
+
+.grid > article img {
+    /* max-width: 100%; */
+    width: 200px;
+    align-items: center;
+    justify-content: center;
+}
+
+.card-category {
+    padding: 0 20px 20px;
+}
+
+.card-category > button {
+    background: var(--light-bluish-grey);
+    border: 0;
+    color: white;
+    padding: 10px;
+    width: 100%;
+}
+
+/* Footer */
 .footer {
     background-color: var(--black);
     color: var(--white);
@@ -219,28 +260,4 @@ footer hr {
     .footer {
       position: unset;
     }
-}
-
-.grid-category { 
-    display: grid;
-    grid-template-columns: repeat(auto-fill, minmax(200px, 1fr));
-    grid-gap: 20px;
-    align-items: stretch;
-}
-.grid-category > article {
-    border: 1px solid #ccc;
-    box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
-}
-.grid > article img {
-    max-width: 100%;
-}
-.card-category {
-    padding: 0 20px 20px;
-}
-.card-category > button {
-    background: var(--light-bluish-grey);
-    border: 0;
-    color: white;
-    padding: 10px;
-    width: 100%;
 }
