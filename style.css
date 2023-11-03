@@ -155,8 +155,9 @@ header a {
 }
 
 .card img {
-    object-fit: fill;
-    height: 300px;
+    object-fit: contain;
+    height: 250px;
+    padding-bottom: 20px;
 }
 
 .card__content {
@@ -169,14 +170,24 @@ header a {
     margin-top: auto;
 }
 
-.card__content > button {
+.card__aside {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-top: auto;
+}
+
+.price {
+    font-weight: bolder;
+}
+
+.card__content button {
     position: relative;
     background: var(--light-bluish-grey);
     border: 0;
     color: var(--white);
     padding: 10px;
-    width: 100%;
-    margin-top: auto;
+    font-weight: bolder;
 }
 
 @media(min-width: 1000px) {
