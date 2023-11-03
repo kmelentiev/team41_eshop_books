@@ -98,10 +98,17 @@ header a {
     display: block;
     padding: 20px;
     color: var(--black);
-    border-right: 1px solid var(--white);
     /* outline: 2px solid var(--light-bluish-grey); */
-
 }
+ul menu a {
+    padding-right: 10px;
+    margin-right: 10px;
+}
+
+ul li:not(:last-of-type) {
+    border-right: 1px solid white;
+}
+
 
 .flex-container {
     display: flex;
