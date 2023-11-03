@@ -53,15 +53,14 @@ input {
     height: 20px;
     width: 20px;
     position: absolute;
-    top: 8px;
+    top: 6px;
     right: 8px;
     background: #F15B42;
     cursor: pointer;
 }
 
 .search-btn:before {
-    content: "\f105";
-    font-family: FontAwesome;
+    
     color: var(--white);
     font-size: 20px;
     font-weight: bold;
@@ -87,6 +86,8 @@ header {
 
 .desktop a {
     margin-inline: 30px;
+
+
 }
 
 header a {
@@ -100,6 +101,7 @@ header a {
     display: block;
     padding: 20px;
     color: var(--black);
+    border-right: 1px solid var(--white);
     /* outline: 2px solid var(--light-bluish-grey); */
 
 }
