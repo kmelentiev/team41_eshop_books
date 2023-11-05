@@ -66,8 +66,9 @@ object {
 }
 
 .img-btn {
-    width: 36px;
-    padding-right: 10px;
+    display: flex;
+    width: 30px;
+    margin-right: 20px;
 }
 
 /* Header flex */
@@ -79,17 +80,18 @@ header {
     background-color: var(--light-bluish-grey);
 }
 
+.universal img {
+    display: flex;
+    object-fit: contain;
+    height: 40px;
+}
+
 .desktop {
     background: var(--silver-coyote)
 }
 
 .desktop a {
     margin-inline: 30px;
-}
-
-header a {
-    text-decoration: none;
-    transition: all 0.3s ease 0s;
 }
 
 /* Nav menu */
