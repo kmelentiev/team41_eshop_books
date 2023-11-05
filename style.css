@@ -232,15 +232,45 @@ ul li:not(:last-of-type) {
 }
 
 /* Specific book */
-.book-name img {
-    display: block;
-    margin: 20px auto;
-
+.book-page {
+    display: grid;
+    grid-template-columns: 1fr;
+    gap: 20px;
+    padding: 20px;
 }
+
+.book-image img {
+    display: block;
+    margin: 30px auto;
+}
+
+.buy-button>button{
+    background: var(--light-bluish-grey);
+    border: 0;
+    color: var(--white);
+    padding: 10px;
+    width: 100%;
+}
+
 @media (min-width: 800px) {
-    .book-name img {
+    .book-image img {
         margin-left: 0px;
     }
+    .book-page {
+        display: grid;
+        grid-template-columns: 1fr 2fr 2fr;
+    }
+}
+
+
+.cost-of-book {
+    background: var(--silver-coyote);
+    border: 0;
+    color: var(--black);
+    margin-right: 90px;
+    padding: 10px;
+    font-weight: bolder;
+  ;
 }
 /* Footer */
 .footer {
