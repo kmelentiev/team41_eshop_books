@@ -194,36 +194,50 @@ ul li:not(:last-of-type) {
 }
 
 /* Category Card */
-.grid-category { 
+/* Category Card */
+.category-list { 
     column-gap: 20px;
 }
 
-.grid-category article {
+.category-list article {
     display: flex;
     flex-direction: row;
     border: 1px solid #ccc;
     box-shadow: 2px 2px 6px 0px  rgba(0,0,0,0.3);
+    padding: 20px;
 }
 
-.grid-category > article img {
+.category-list > article img {
     margin: 20px;
     object-fit: fill;
     height: 300px;
 }
 
-.card-category {
+.category-card-info {
     display: flex;
     flex-direction: column;
     flex: auto;
     width: 100%;;
+    justify-content: center;
 }
 
-.card-aside-category {
-    flex: 0 0 auto;
+.category-card-title {
+    font-size: 1.5em;
+}
+
+.category-card-author {
+    font-weight: bold;
+}
+
+.category-card-aside {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    text-justify: auto;
     width: 200px;
 }
 
-.card-aside-category > button {
+.category-card-aside > button {
     background: var(--light-bluish-grey);
     border: 0;
     color: var(--white);
