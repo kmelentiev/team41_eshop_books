@@ -234,7 +234,9 @@ ul li:not(:last-of-type) {
 /* Specific book */
 .book-page {
     display: grid;
-    grid-template-columns: 1fr;
+    /*grid-template-columns: 1fr;*/
+    grid-template-rows: auto auto;
+    grid-template-columns: 300px 1fr 300px;
     gap: 20px;
     padding: 20px;
 }
@@ -242,14 +244,6 @@ ul li:not(:last-of-type) {
 .book-image img {
     display: block;
     margin: 30px auto;
-}
-
-.buy-button>button{
-    background: var(--light-bluish-grey);
-    border: 0;
-    color: var(--white);
-    padding: 10px;
-    width: 100%;
 }
 
 @media (min-width: 800px) {
@@ -264,14 +258,34 @@ ul li:not(:last-of-type) {
 
 
 .cost-of-book {
+    margin-block: 100px;
     background: var(--silver-coyote);
     border: 0;
     color: var(--black);
-    margin-right: 90px;
     padding: 10px;
     font-weight: bolder;
-  ;
 }
+.buy-button>button{
+    background: var(--light-bluish-grey);
+    border: 0;
+    color: var(--white);
+    margin-block: 50px;
+    padding:20px;
+    width: 80%;
+
+}
+.book-name{
+    font-weight: 800;
+    font-size: 2rem;
+}
+
+.book-brief {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    align-items: center;
+}
+
 /* Footer */
 .footer {
     background-color: var(--black);
