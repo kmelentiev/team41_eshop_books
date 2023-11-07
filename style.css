@@ -303,6 +303,9 @@ ul li:not(:last-of-type) {
     height: 300px;
     margin: 30px auto;
 }
+.book-attributes-section{
+    font-weight: bolder;
+}
 
 @media (min-width: 800px) {
     .book-image img {
