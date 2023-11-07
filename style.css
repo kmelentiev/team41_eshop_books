@@ -298,7 +298,9 @@ ul li:not(:last-of-type) {
 }
 
 .book-image img {
-    display: block;
+    /*display: block;*/
+    object-fit: contain;
+    height: 300px;
     margin: 30px auto;
 }
 
@@ -340,7 +342,7 @@ ul li:not(:last-of-type) {
 }
 
 .price-of-book {
-    font-size: 36px;
+    font-size: 24px;
     font-weight: 700;
 }
 
