@@ -1,0 +1,179 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- App title -->
+    <title>Worldbooks: Delivery</title>
+    <!-- Link CSS file -->
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="cart.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css">
+
+</head>
+<body>
+
+<!-- Navigation bar -->
+<header class="universal">
+    <div class="container">
+        <nav class="flex-container-1">
+            <!-- Logo -->
+            <a href="index.html"><img alt="WorldBooks" src="pictures/WorldBooks.png" class="logo"></a>
+            <!-- Search -->
+            <form>
+                <input type="text" placeholder="">
+                <button class="search-btn" type="submit">
+                    <object data="pictures/search.svg"></object>
+                </button>
+            </form>
+            <!-- Signing in -->
+            <div class="cart-btn">
+                <a href="./cart.html">
+                    <img src="pictures/shopping-cart.png" alt="Cart" class="img-btn">
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
+
+<header class="desktop">
+    <div class="container">
+        <!-- Menu -->
+        <nav class="flex-container-2">
+            <ul class="menu">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="#">Detective</a></li>
+                <li><a href="#">Fiction</a></li>
+                <li><a href="#">Young adult </a></li>
+                <li><a href="#">Education</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+
+<main class="delivery">
+    <!--    navigation-->
+    <nav class="cart nav">
+        <div class="nav box ">
+            <div class="nav dot">1</div>
+            <div class="nav title">Cart</div>
+        </div>
+
+        <div class="nav dash"></div>
+
+        <div class="nav box">
+            <div class="nav dot">2</div>
+            <div class="nav title">Address</div>
+        </div>
+
+        <div class="nav dash"></div>
+
+        <div class="nav box active">
+            <div class="nav dot">3</div>
+            <div class="nav title">Payment</div>
+        </div>
+    </nav>
+
+    <section class="delivery form">
+        <h2>Payment information</h2>
+        <form action="./payment.html" method="GET" class="user form">
+            <div>
+                <div class="form span">Shipment *</div>
+                <div class="shipment label">
+                    <input type="radio" required class="shipment radio" id="cash" name="shipment" value="Czech Post"/>
+                    <i class="fa-solid fa-money-bill-wave"></i>
+                    <div>
+                        <label for="cash" class="shipment value">Cash</label>
+                    </div>
+                </div>
+                <div class="shipment label">
+                    <input type="radio" class="shipment radio" id="card" name="shipment" value="Czech Post"/>
+                    <i class="fa-regular fa-credit-card"></i>
+                    <div>
+                        <label for="card" class="shipment value">Card</label>
+                    </div>
+
+                </div>
+                <div class="shipment label">
+                    <input type="radio" class="shipment radio" id="bank" name="shipment" value="Czech Post"/>
+                    <i class="fa-solid fa-building-columns"></i>
+                    <div>
+                        <label for="bank" class="shipment value">Bank transfer</label>
+                    </div>
+
+                </div>
+                <div class="shipment label">
+                    <input type="radio" class="shipment radio" id="sodexo" name="shipment" value="Czech Post"/>
+                    <i class="fa-brands fa-cc-mastercard"></i>
+                    <div>
+                        <label for="sodexo" class="shipment value">Sodexo</label>
+                    </div>
+
+                </div>
+
+            </div>
+
+            <div class="total">
+                <div class="total item">
+                    <span>Items</span>
+                    <span class="total price">190$</span>
+                </div>
+                <div class="total item">
+                    <span>Shipment and payment</span>
+                    <span class="total price">56$</span>
+                </div>
+                <div class="total item result">
+                    <span>Total</span>
+                    <span class="total price result">246$</span>
+                </div>
+            </div>
+
+            <div class="delivery end full">
+                <button class="cart button" type="submit">Pay</button>
+            </div>
+        </form>
+
+    </section>
+</main>
+
+<div class="footer">
+    <div class="container">
+        <div class="content">
+            <div class="about-footer">
+                <h4>Worldbooks</h4>
+                <p>
+                    Welcome to WorldBook - your digital haven for literary treasures. Discover a diverse collection of
+                    books, from bestsellers to hidden gems, all just a click away. Whether you're seeking knowledge,
+                    adventure, or inspiration, our online bookstore offers an easy and convenient way to explore,
+                    purchase, and immerse yourself in the world of words. Start your reading journey with us today
+                </p>
+            </div>
+            <div class="basic-footer">
+                <h4>Worldbooks</h4>
+                <p><a href="about.html">About us</a></p>
+                <p><a href="#">Blog</a></p>
+                <p><a href="career.html">Career</a></p>
+            </div>
+            <div class="contacts-footer">
+                <h4 class="time">Mon - Fri</h4>
+                <h4 class="time">8:00 - 18:00</h4>
+                <h4 class="mobile">+420&nbsp;277&nbsp;032&nbsp;342</h4>
+                <p>
+                    We respond within <br/>
+                    24 hours
+                </p>
+                <p><a href="#">info@worldbooks.cz</a></p>
+            </div>
+        </div>
+    </div>
+    <footer>
+        <hr/>
+        ©2023 Worldbooks s.r.o.
+        <p>This website created</p>
+        <p>due to study purposes</p>
+    </footer>
+</div>
+</body>
+
+</html>
