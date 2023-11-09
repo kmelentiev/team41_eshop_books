@@ -8,6 +8,9 @@
     --pale-grey-brown: #BDA18C;
     --dark-grey-brown: #3F352C;
     --black: #000000;
+    --test-1: #553523;
+    --test-2: #ad7751;
+    --test-3: #e2e8e8;
 } /* variables*/
 
 /* Reset */
@@ -35,6 +38,19 @@ ul {
 .container {
     max-width: 1440px;
     margin: 0 auto;
+}
+
+.container-about {
+    width: auto;
+    margin-left: 16px;
+    margin-right: 16px;
+}
+
+@media (min-width: 700px) {
+    .container-about {
+        width: 700px;
+        margin: 0 auto;
+    }
 }
 
 /* Search */
