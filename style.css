@@ -8,9 +8,9 @@
     --pale-grey-brown: #BDA18C;
     --dark-grey-brown: #3F352C;
     --black: #000000;
-    --test-1: #553523;
-    --test-2: #ad7751;
-    --test-3: #e2e8e8;
+    --paper: #F5EFEA;
+    --avatar: #4B6587;
+    --bronze-coyote: #D4C2AC;
 } /* variables*/
 
 /* Reset */
@@ -21,7 +21,7 @@
 }
 
 body {
-    background-color: var(--white);
+    background-color: var(--paper);
     font-family: "Poppins", sans-serif;
     line-height: 1.5;
 }
@@ -100,7 +100,7 @@ header {
     /* display: flex;
     justify-content: space-around;
     align-items: center; */
-    background-color: var(--light-bluish-grey);
+    background-color: var(--avatar);
 }
 
 nav {
@@ -121,7 +121,7 @@ nav {
 }
 
 .desktop {
-    background: var(--silver-coyote)
+    background: var(--bronze-coyote)
 }
 
 .desktop a {
