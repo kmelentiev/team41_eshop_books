@@ -364,7 +364,7 @@ ul li:not(:last-of-type) {
 
 }
 
-.category-card-aside > button {
+.category-card-aside button {
 	background: var(--light-bluish-grey);
 	border: none;
 	border-radius: 10px;
