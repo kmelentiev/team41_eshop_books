@@ -38,15 +38,14 @@ ul {
 	list-style: none;
 }
 
+/* Containers */
 .container {
 	max-width: 1440px;
 	margin: 0 auto;
 	padding: 0 15px;
 }
 
-/*Container text*/
-
-.container-about {
+.container-text {
 	width: auto;
 	margin-left: 16px;
 	margin-right: 16px;
@@ -56,29 +55,13 @@ ul {
 	.container {
 		padding: 0 30px;
 	}
-	.container-about {
+	.container-text {
 		width: 700px;
 		margin: 0 auto;
 	}
 }
 
-.container-jobs {
-	width: auto;
-	margin-left: 16px;
-	margin-right: 16px;
-}
-
-@media (min-width: 700px) {
-	.container {
-		padding: 0 30px;
-	}
-	.container-jobs {
-		width: 700px;
-		margin: 0 auto;
-	}
-}
-
-/*Career*/
+/* Career */
 .underlined-decor {
 	text-decoration: line-through;
 }
@@ -119,9 +102,8 @@ object {
 }
 
 .img-btn {
-	display: flex;
 	width: 30px;
-	margin-right: 20px;
+	margin-right: 5px;
 }
 
 /* Header flex */
