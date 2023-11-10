@@ -11,6 +11,7 @@
 	--paper: #F5EFEA;
 	--avatar: #4B6587;
 	--bronze-coyote: #D4C2AC;
+	--lite-avatar: #B1BCCB;
 }
 
 /* variables*/
@@ -206,7 +207,7 @@ ul li:not(:last-of-type) {
 	padding: 20px 20px;
 	border: 2px solid var(--pale-grey-brown);
     border-radius: 14px;
-    box-shadow: 0 10px 10px var(--pale-grey-brown);
+    box-shadow: 0 5px 5px var(--pale-grey-brown);
 }
 
 .card img {
@@ -256,6 +257,69 @@ ul li:not(:last-of-type) {
 	}
 }
 
+/* Banner */
+.two-columns {
+	display: flex;
+	flex-wrap: wrap;
+}
+
+.banner {
+	height: 100%;
+	margin: 5px;
+    padding: 10px;
+    border-radius: 6px;
+	background-color: var(--lite-avatar);
+}
+
+.banner-content {
+	display: flex;
+	flex-direction: column;
+	text-align: center;
+}
+
+.banner-content__aside {
+	display: flex;
+    flex-direction: column;
+	align-items: center;
+}
+
+.banner-content__aside__img img {
+	object-fit: contain;
+	height: 250px;
+	margin: 30px auto;
+}
+
+.banner-content__main {
+	display: flex;
+	flex-direction: column;
+}
+
+.banner-btn {
+	position: relative;
+	background: var(--light-bluish-grey);
+	border: 0;
+	color: var(--white);
+	padding: 10px;
+	font-weight: bolder;
+}
+
+@media (min-width: 850px) {
+	.two-columns {
+		flex-wrap: nowrap;
+	}
+	.banner-content {
+		flex-direction: row;
+	}
+	.banner-content__aside {
+		flex-direction: column;
+		width: 50%;
+	}
+	.banner-content__main {
+		flex-direction: column;
+		width: 50%;
+	}
+}
+
 /* Category Card */
 .category-list {
 	column-gap: 20px;
@@ -266,7 +330,7 @@ ul li:not(:last-of-type) {
 	flex-direction: row;
 	border: 2px solid var(--pale-grey-brown);
 	border-radius: 14px;
-	box-shadow: 0 10px 10px var(--pale-grey-brown);
+	box-shadow: 0 5px 5px var(--pale-grey-brown);
 	margin-bottom: 10px;
 	padding: 5px;
 	flex-wrap: wrap;
@@ -366,7 +430,7 @@ ul li:not(:last-of-type) {
 	margin: 30px auto;
 	border: 2px solid var(--pale-grey-brown);
 	border-radius: 14px;
-	box-shadow: 0 10px 10px var(--pale-grey-brown);
+	box-shadow: 0 5px 5px var(--pale-grey-brown);
 }
 
 .book-attributes-section {
