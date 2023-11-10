@@ -478,8 +478,34 @@ div[class^="book-attributes-"] {
 	display: grid;
 }
 
+.book-review-header {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.book-review-main {
+	display: flex;
+	flex-direction: row;
+	justify-content: space-between;
+}
+.avatar-image{
+	width: 60px;
+	height: 60px;
+	display: inline-block;
+	border-radius: 50%;
+	overflow: hidden;
+
+}
+
+/*.book-reviews-date{*/
+/*	display: flex;*/
+/*	justify-content: right;*/
+
+/*}*/
+
 .book-reviews-reviewer {
-	font-weight: bold;
+	font-weight: bolder;
+	/*display: flex;*/
 }
 
 hr {
