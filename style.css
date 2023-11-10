@@ -106,9 +106,36 @@ object {
 	margin-right: 5px;
 }
 
+.result-box ul {
+	padding: 15px 10px;
+	/* display: none; */
+	left: -9999px;
+	position: absolute;
+	background: #e9f3ff;
+	width: 100%;
+	border-radius: 6px;
+}
+
+.result-box ul li {
+	list-style: none;
+	border-radius: 3px;
+	padding: 15px 10px;
+	cursor: pointer;
+	transition: all .5s linear;
+}
+
+.result-box ul li:hover {
+	background: #e9f3ff;
+}
+
+nav input:focus-visible ~ .result-box ul{
+	display: block;
+	left: auto;
+}
+
 /* Header flex */
 header {
-	position: sticky;
+	/* position: sticky; */
 	background-color: var(--avatar);
 }
 
