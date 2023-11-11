@@ -4,133 +4,142 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- App title -->
     <title>Worldbooks</title>
-    <!-- Link CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
-    <!-- Navigation bar -->
-    <header class="universal">
-        <div class="container">
-            <nav class="flex-container-1">
-                <!-- Logo -->
-                <a href="index.html"><img alt="WorldBooks" src="pictures/WorldBooks.png" class="logo" ></a>
-                <!-- Search -->
-                <form>
-                    <input type="text" placeholder="What are you looking for?">
-                    <button class="search-btn" type="submit"><object data="pictures/search.svg"></object></button>
-                </form>
-                <!-- Signing in -->
-                <div class="cart-btn">
-                    <img src="pictures/shopping-cart.png" alt="Cart" class="img-btn">
+<!-- Navigation bar -->
+<header class="universal">
+    <div class="container">
+        <nav class="header-container-default">
+            <!-- Logo -->
+            <a href="index.html"><img alt="WorldBooks" src="pictures/WorldBooks.png"></a>
+            <!-- Search -->
+            <form>
+                <input type="text" placeholder="What are you looking for?">
+                <button class="search-btn" type="submit">
+                    <object data="pictures/search.svg"></object>
+                </button>
+                <div class="search-result-box">
+                    <ul>
+                        <li><a href="it-ends-at-midnight.html">It Ends At Midnight</a></li>
+                        <li><a href="romance.html">Romance</a></li>
+                        <li><a href="it-ends-at-midnight.html">Three Assasins</a></li>
+                    </ul>
                 </div>
-            </nav>
-        </div>
-    </header>
+            </form>
+            <!-- Signing in -->
+            <div class="cart-btn">
+                <a href="cart.html">
+                    <img src="pictures/shopping-cart.png" alt="Cart" class="cart-btn-img">
+                </a>
+            </div>
+        </nav>
+    </div>
+</header>
 
-    <header class="desktop">
-        <div class="container">
-            <!-- Menu -->
-            <nav class="flex-container-2">
-                <ul class="menu">
-                    <li><a href="romance.html">Romance</a></li>
-                    <li><a href="romance.html">Detective</a></li>
-                    <li><a href="romance.html">Fiction</a></li>
-                    <li><a href="romance.html">Young adult </a></li>
-                    <li><a href="romance.html">Education</a></li>
-                </ul>
-            </nav>
-        </div>        
-    </header>
-    <!-- Main content -->
-    <main>
-        <div class="container">
-            <div class="book-page">
-                <div class="book-image">
-                    <img src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
-                </div>
-                <article class="book-info">
-                    <p class="book-name">It Ends At Midnight</p>
-                </article>
-                <div class="cost-of-book">
-                    <div class="cost-of-book-flex">
-                        <p class="price-of-book">200&nbsp;CZK</p>
-                        <div class="buy-button">
-                            <button type="buy-btn">Add to Cart</button>
-                        </div>
-                    </div>
-                </div>
-                <div class="book-brief">
-                    <div class="book-description">
-                        <p>It's New Year's Eve and the stage is set for a lavish party in one of Edinburgh's best postcodes. It's a moment for old friends to set the past to rights - and move on.
-                            The night sky is alive with fireworks and the champagne is flowing. But the celebration fails to materialise.
-                            Because someone at this party is going to die tonight.
-                            Midnight approaches and the countdown begins - but it seems one of the guests doesn't want a resolution.
-                        </p>
-                        <br>
-                        <p>They want revenge.</p>
-                    </div>
-                    <div class="book-attributes">
-                        <div class="book-attributes-isbn">
-                            <p class="book-attributes-section"> ISBN:</p>
-                            <p class="book-attributes-value">1472280113</p>
-                        </div>
-                        <div class="book-attributes-publisher">
-                            <p class="book-attributes-section">Publisher:</p>
-                            <p class="book-attributes-value">Headline Publishing Group</p>
-                        </div>
-                        <div class="book-attributes-language">
-                            <p class="book-attributes-section">Language:</p>
-                            <p class="book-attributes-value">English</p>
-                        </div>
-                        <div class="book-attributes-author">
-                            <p class="book-attributes-section">Authors:</p>
-                            <p class="book-attributes-value">Tyce, Harriet</p>
-                        </div>
-                        <div class="book-attributes-country">
-                            <p class="book-attributes-section">Country:</p>
-                            <p class="book-attributes-value">United Kingdom</p>
-                        </div>
-                        <div class="book-attributes-cover">
-                            <p class="book-attributes-section">Binding:</p>
-                            <p class="book-attributes-value">Paperback / softback</p>
-                        </div>
+<header class="desktop">
+    <div class="container">
+        <!-- Menu -->
+        <nav class="header-container-elastic">
+            <ul class="menu">
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="romance.html">Detective</a></li>
+                <li><a href="romance.html">Fiction</a></li>
+                <li><a href="romance.html">Young adult </a></li>
+                <li><a href="romance.html">Education</a></li>
+            </ul>
+        </nav>
+    </div>
+</header>
+<!-- Main content -->
+<main>
+    <div class="container">
+        <div class="book-page">
+            <div class="book-image">
+                <img src="https://img.megabooks.cz/97814722/9781472280114.1.jpg" alt="It Ends At Midnight">
+            </div>
+            <article class="book-info">
+                <p class="book-name">It Ends At Midnight</p>
+            </article>
+            <div class="cost-of-book">
+                <div class="cost-of-book-flex">
+                    <p class="price-of-book">200&nbsp;CZK</p>
+                    <div class="buy-button">
+                        <button type="buy-btn">Add to Cart</button>
                     </div>
                 </div>
             </div>
-            <div class="book-reviews">
-                <hr>
-                <div class="book-reviews-list">
-                    <div class="book-review-header">
-                        <div class="book-reviews-reviewer">
-                            <p>Barbara Powell</p>
-                        </div>
-                        <div class="book-reviews-date"> 17.03.2022 </div>
+            <div class="book-brief">
+                <div class="book-description">
+                    <p>It's New Year's Eve and the stage is set for a lavish party in one of Edinburgh's best postcodes. It's a moment for old friends to set the past to rights - and move on.
+                        The night sky is alive with fireworks and the champagne is flowing. But the celebration fails to materialise.
+                        Because someone at this party is going to die tonight.
+                        Midnight approaches and the countdown begins - but it seems one of the guests doesn't want a resolution.
+                    </p>
+                    <br>
+                    <p>They want revenge.</p>
+                </div>
+                <div class="book-attributes">
+                    <div class="book-attributes-isbn">
+                        <p class="book-attributes-section"> ISBN:</p>
+                        <p class="book-attributes-value">1472280113</p>
                     </div>
-                    <div class="book-review-main">
-                        <img class="avatar-image"
-                             src="https://images.unsplash.com/photo-1478465726282-ddb11650c80b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                        <div class="book-reviews-score">
-                            <p>Stars: 5</p>
-                        </div>
-                        <div class="book-reviews-review">
-                            <p>Dark, atmospheric, and chock full
-                            of characters that make you question their every move. Harriet Tyce is a master
-                            psychological storyteller.
-                            </p>
+                    <div class="book-attributes-publisher">
+                        <p class="book-attributes-section">Publisher:</p>
+                        <p class="book-attributes-value">Headline Publishing Group</p>
+                    </div>
+                    <div class="book-attributes-language">
+                        <p class="book-attributes-section">Language:</p>
+                        <p class="book-attributes-value">English</p>
+                    </div>
+                    <div class="book-attributes-author">
+                        <p class="book-attributes-section">Authors:</p>
+                        <p class="book-attributes-value">Tyce, Harriet</p>
+                    </div>
+                    <div class="book-attributes-country">
+                        <p class="book-attributes-section">Country:</p>
+                        <p class="book-attributes-value">United Kingdom</p>
+                    </div>
+                    <div class="book-attributes-cover">
+                        <p class="book-attributes-section">Binding:</p>
+                        <p class="book-attributes-value">Paperback / softback</p>
                     </div>
                 </div>
+            </div>
+        </div>
+        <div class="book-reviews">
+            <hr>
+            <div class="book-reviews-list">
+                <div class="book-review-header">
+                    <div class="book-reviews-reviewer">
+                        <p>Barbara Powell</p>
+                    </div>
+                    <div class="book-reviews-date"> 17.03.2022 </div>
                 </div>
-                <hr>
-                <div class="book-reviews-list">
-                    <div class="book-review-header">
-                        <div class="book-reviews-reviewer">
+                <div class="book-review-main">
+                    <img class="avatar-image"
+                         src="https://images.unsplash.com/photo-1478465726282-ddb11650c80b?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="book-reviews-score">
+                        <p>Stars: 5</p>
+                    </div>
+                    <div class="book-reviews-review">
+                        <p>Dark, atmospheric, and chock full
+                        of characters that make you question their every move. Harriet Tyce is a master
+                        psychological storyteller.
+                        </p>
+                    </div>
+                </div>
+            </div>
+            <hr>
+            <div class="book-reviews-list">
+                <div class="book-review-header">
+                    <div class="book-reviews-reviewer">
                         <p>Stacey</p>
-                        </div>
-                        <div class="book-reviews-date"> 06.03.2022</div>
-                        </div>
                     </div>
+                    <div class="book-reviews-date"> 06.03.2022</div>
+                    </div>
+                </div>
                 <div class="book-review-main">
                     <img class="avatar-image"
                          src="https://images.unsplash.com/photo-1682708198473-1a2350c76788?q=80&w=1935&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
@@ -141,63 +150,64 @@
                         <p>An unpleasant book full of unpleasant people, I wish I'd never picked it up.</p>
                     </div>
                 </div>
-                </div>
-                <hr>
-                <div class="book-reviews-list">
-                    <div class="book-review-header">
-                        <div class="book-reviews-reviewer">
+            </div>
+            <hr>
+            <div class="book-reviews-list">
+                <div class="book-review-header">
+                    <div class="book-reviews-reviewer">
                         <p>Dubolik</p>
-                        </div>
-                        <div class="book-reviews-date"> 12.12.2021 </div>
                     </div>
-                    <div class="book-review-main">
-                        <img class="avatar-image"
-                             src="https://images.unsplash.com/photo-1695236195335-18e1640688d9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
-                        <div class="book-reviews-score">
-                            <p>Stars: 3</p>
-                        </div>
-                        <div class="book-reviews-review">
-                            <p>I wanted to like this one, I really did. But the more I read the more I rolled
-                            my eyes and got so absolutely annoyed with the characters. I saw where this
-                            was going from a mile away and was sad when I was right.
-                            </p>
-                        </div>
+                    <div class="book-reviews-date"> 12.12.2021 </div>
+                </div>
+                <div class="book-review-main">
+                    <img class="avatar-image"
+                         src="https://images.unsplash.com/photo-1695236195335-18e1640688d9?q=80&w=1887&auto=format&fit=crop&ixlib=rb-4.0.3&ixid=M3wxMjA3fDB8MHxwaG90by1wYWdlfHx8fGVufDB8fHx8fA%3D%3D">
+                    <div class="book-reviews-score">
+                        <p>Stars: 3</p>
+                    </div>
+                    <div class="book-reviews-review">
+                        <p>I wanted to like this one, I really did. But the more I read the more I rolled
+                        my eyes and got so absolutely annoyed with the characters. I saw where this
+                        was going from a mile away and was sad when I was right.
+                        </p>
+                    </div>
                 </div>
             </div>
         </div>
-        <div class="footer">
-            <div class="container">
-                <div class="content">
-                    <div class="about-footer">
+    </div>
+    <div class="footer">
+        <div class="container">
+            <div class="content">
+                <div class="about-footer">
+                <h4>Worldbooks</h4>
+                </p>
+                    Welcome to WorldBook  - your digital haven for literary treasures. Discover a diverse collection of books, from bestsellers to hidden gems, all just a click away. Whether you're seeking knowledge, adventure, or inspiration, our online bookstore offers an easy and convenient way to explore, purchase, and immerse yourself in the world of words. Start your reading journey with us today
+                </p>
+                </div>
+                <div class="basic-footer">
                     <h4>Worldbooks</h4>
-                    </p>
-                        Welcome to WorldBook  - your digital haven for literary treasures. Discover a diverse collection of books, from bestsellers to hidden gems, all just a click away. Whether you're seeking knowledge, adventure, or inspiration, our online bookstore offers an easy and convenient way to explore, purchase, and immerse yourself in the world of words. Start your reading journey with us today
-                    </p>
-                    </div>
-                    <div class="basic-footer">
-                        <h4>Worldbooks</h4>
-                        <p><a href="about.html">About us</a></p>
-                        <p><a href="career.html">Career</a></p>
-                    </div>
-                    <div class="contacts-footer">
-                        <h4 class="time">Mon - Fri</h4>
-                        <h4 class="time">8:00 - 18:00</h4>
-                        <h4 class="mobile">+420&nbsp;277&nbsp;032&nbsp;342</h4>
-                        </p>                <p>
-                                We respond within  <br />
-                                24 hours
-                            </p>
-                        <p><a href="#">info@worldbooks.cz</a></p>
-                    </div>
+                    <p><a href="about.html">About us</a></p>
+                    <p><a href="career.html">Career</a></p>
+                </div>
+                <div class="contacts-footer">
+                    <h4 class="time">Mon - Fri</h4>
+                    <h4 class="time">8:00 - 18:00</h4>
+                    <h4 class="mobile">+420&nbsp;277&nbsp;032&nbsp;342</h4>
+                    </p>                <p>
+                            We respond within  <br />
+                            24 hours
+                        </p>
+                    <p><a href="#">info@worldbooks.cz</a></p>
                 </div>
             </div>
-            <footer>
-                <hr />
-                ©2023 Worldbooks s.r.o.
-                <p>This website created</p>
-                <p>due to study purposes</p>
-            </footer>
         </div>
-    </main>
+        <footer>
+            <hr />
+            ©2023 Worldbooks s.r.o.
+            <p>This website created</p>
+            <p>due to study purposes</p>
+        </footer>
+    </div>
+</main>
 </body>
 </html>

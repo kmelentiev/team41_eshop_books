@@ -4,29 +4,34 @@
     <meta charset="UTF-8">
     <meta http-equiv="X-UA-Compatible" content="IE=edge">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <!-- App title -->
     <title>Worldbooks</title>
-    <!-- Link CSS file -->
     <link rel="stylesheet" href="style.css">
 </head>
 <body>
 <!-- Navigation bar -->
 <header class="universal">
     <div class="container">
-        <nav class="flex-container-1">
+        <nav class="header-container-default">
             <!-- Logo -->
-            <a href="index.html"><img alt="WorldBooks" src="pictures/WorldBooks.png" class="logo"></a>
+            <a href="index.html"><img alt="WorldBooks" src="pictures/WorldBooks.png"></a>
             <!-- Search -->
             <form>
                 <input type="text" placeholder="What are you looking for?">
                 <button class="search-btn" type="submit">
                     <object data="pictures/search.svg"></object>
                 </button>
+                <div class="search-result-box">
+                    <ul>
+                        <li><a href="it-ends-at-midnight.html">It Ends At Midnight</a></li>
+                        <li><a href="romance.html">Romance</a></li>
+                        <li><a href="it-ends-at-midnight.html">Three Assasins</a></li>
+                    </ul>
+                </div>
             </form>
             <!-- Signing in -->
             <div class="cart-btn">
-                <a href="./cart.html">
-                    <img src="pictures/shopping-cart.png" alt="Cart" class="img-btn">
+                <a href="cart.html">
+                    <img src="pictures/shopping-cart.png" alt="Cart" class="cart-btn-img">
                 </a>
             </div>
         </nav>
@@ -36,7 +41,7 @@
 <header class="desktop">
     <div class="container">
         <!-- Menu -->
-        <nav class="flex-container-2">
+        <nav class="header-container-elastic">
             <ul class="menu">
                 <li><a href="romance.html">Romance</a></li>
                 <li><a href="romance.html">Detective</a></li>
