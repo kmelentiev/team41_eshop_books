@@ -507,21 +507,25 @@ div[class^="book-attributes-"] {
 
 .book-review-header {
 	display: flex;
-	flex-direction: row;
+	flex-direction: column;
 	justify-content: space-between;
 }
+
+.book-review-header-left {
+	display: flex;
+	flex-direction: column;
+	gap: 20px;
+}
+
 .book-review-main {
 	display: flex;
 	flex-direction: row;
-	justify-content: space-between;
+	justify-content: flex-start;
+	gap: 25px;
 }
-.avatar-image{
-	width: 60px;
-	height: 60px;
-	display: inline-block;
-	border-radius: 50%;
-	overflow: hidden;
 
+.avatar-image {
+	display: none;
 }
 
 /*.book-reviews-date{*/
@@ -543,6 +547,28 @@ hr {
 	box-sizing: content-box;
 	display: block;
 	place-content: center;
+}
+
+@media (min-width: 350px) {
+	.book-review-header {
+		flex-direction: row;
+	}
+
+	.book-review-header-left {
+		flex-direction: row;
+	}
+
+	.book-review-main {
+		gap: 50px;
+	}
+
+	.avatar-image {
+		object-fit: cover;
+		height: 60px;
+		width: 60px;
+		display: inline-block;
+		border-radius: 40%;
+	}
 }
 
 @media (min-width: 900px) {
