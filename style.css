@@ -582,7 +582,7 @@ hr {
 	margin-top: auto;
 }
 
-.footer .content {
+.footer .footer-content {
 	display: flex;
 	flex-direction: column;
 	gap: 10px;
@@ -591,24 +591,24 @@ hr {
 	font-size: 14px;
 }
 
-.about-footer {
+.footer-content-about {
 	padding-right: 20px;
 }
 
-.footer .content p {
+.footer .footer-content p {
 	margin-bottom: 1.3rem;
 }
 
-.footer .content a {
+.footer .footer-content a {
 	text-decoration: none;
 	color: var(--white);
 }
 
-.footer .content a:hover {
+.footer .footer-content a:hover {
 	border-bottom: 1px solid #971717;
 }
 
-.footer .content h4 {
+.footer .footer-content h4 {
 	margin-bottom: 1.3rem;
 	font-size: 19px;
 }
@@ -623,7 +623,7 @@ footer hr {
 }
 
 @media (min-width: 900px) {
-	.footer .content {
+	.footer .footer-content {
 		flex-direction: row;
 		gap: 80px;
 	}
