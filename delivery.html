@@ -119,12 +119,13 @@
             </label>
             <label class="form label">
                 <span class="form span">Post index *</span>
-                <input class="form input" type="text" required>
+                <input class="form input" maxlength="6"  type="text" required>
             </label>
-            <label class="form label full">
+            <label class="form label full ">
                 <span class="form span">Country *</span>
-                <select name="country" size="6" class="form select" required>
-                    <option value="cz" selected>Czech Republic</option>
+                <select name="country" class="form select country" required>
+                    <option value="" hidden>Select the country</option>
+                    <option value="cz">Czech Republic</option>
                     <option value="ge">Germany</option>
                     <option value="pl">Poland</option>
                     <option value="sk">Slovakia</option>
@@ -144,7 +145,7 @@
                 </div>
                 <div class="shipment label">
                     <input type="radio" class="shipment radio" id="dhl" name="shipment" value="Czech Post"/>
-                    <i class="fa-brands fa-dhl"></i>
+                    <i class="fa-solid fa-truck-ramp-box"></i>
                     <div>
                         <label for="dhl" class="shipment value">DHL</label>
                         <span>77$</span>
