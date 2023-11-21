@@ -537,7 +537,7 @@ div[class^="book-attributes-"] {
 	/*display: flex;*/
 }
 
-hr {
+.book-reviews hr {
 	background-image: linear-gradient(to right, transparent, rgba(0, 0, 0, 0.2), transparent);
 	border: 0;
 	height: 1px;
@@ -622,7 +622,7 @@ hr {
 }
 
 .footer .footer-content p {
-	margin-bottom: 1.3rem;
+	margin-bottom: 1.2rem;
 }
 
 .footer .footer-content a {
@@ -635,17 +635,17 @@ hr {
 }
 
 .footer .footer-content h4 {
-	margin-bottom: 1.3rem;
+	margin-bottom: 1.2rem;
 	font-size: 19px;
 }
 
 footer {
 	text-align: center;
-	padding-bottom: 2rem;
+	padding-bottom: 1rem;
 }
 
 footer hr {
-	margin: 2rem 0;
+	margin: 1rem 0;
 }
 
 @media (min-width: 900px) {
