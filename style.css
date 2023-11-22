@@ -167,7 +167,6 @@ nav {
 	display: block;
 	padding: 20px;
 	color: var(--black);
-	/* outline: 2px solid var(--light-bluish-grey); */
 }
 
 ul menu a {
@@ -254,6 +253,7 @@ ul li:not(:last-of-type) {
 	position: relative;
 	background: var(--light-bluish-grey);
 	border: 0;
+	border-radius: 10px;
 	color: var(--white);
 	padding: 10px;
 	font-weight: bolder;
@@ -262,7 +262,6 @@ ul li:not(:last-of-type) {
 @media (min-width: 1350px) {
 	.wrapper {
 		overflow: hidden;
-		/* grid-template-columns: repeat(auto-fill, minmax(250px, 1fr)); */
 	}
 }
 
@@ -403,7 +402,6 @@ ul li:not(:last-of-type) {
 @media (min-width: 550px) {
 	.category-list article {
 		flex-wrap: nowrap;
-		justify-content: none;
 	}
 }
 
@@ -464,11 +462,6 @@ ul li:not(:last-of-type) {
 }
 
 .buy-button > button {
-	/* border: 0;
-	color: var(--white);
-	margin-block: 50px;
-	padding:20px;
-	width: 80%; */
 	display: inline-flex;
 	align-items: center;
 	justify-content: center;
@@ -534,7 +527,6 @@ div[class^="book-attributes-"] {
 
 .book-reviews-reviewer {
 	font-weight: bolder;
-	/*display: flex;*/
 }
 
 .book-reviews hr {
