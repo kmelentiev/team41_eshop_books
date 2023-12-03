@@ -1,236 +1,256 @@
 <!DOCTYPE html>
 <html lang="en">
-<head>
-    <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
     <title>Worldbooks: Cart</title>
-    <link rel="stylesheet" href="style.css">
-    <link rel="stylesheet" href="cart.css">
-</head>
-<body>
-<!-- Navigation bar -->
-<header class="universal">
-    <div class="container">
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body>
+    <!-- Navigation bar -->
+    <header class="universal">
+      <div class="container">
         <nav class="header-container-default">
-            <!-- Logo -->
-            <a href="index.html"><img alt="WorldBooks" src="pictures/WorldBooks.png"></a>
-            <!-- Search -->
-            <form>
-                <input type="text" placeholder="What are you looking for?">
-                <button class="search-btn" type="submit">
-                    <object data="pictures/search.svg"></object>
-                </button>
-                <div class="search-result-box">
-                    <ul>
-                        <li><a href="it-ends-at-midnight.html">It Ends At Midnight</a></li>
-                        <li><a href="romance.html">Romance</a></li>
-                        <li><a href="it-ends-at-midnight.html">Three Assasins</a></li>
-                    </ul>
-                </div>
-            </form>
-            <!-- Signing in -->
-            <div class="cart-btn">
-                <a href="cart.html">
-                    <img src="pictures/cart.svg" alt="Cart" class="cart-btn-img">
-                </a>
+          <!-- Logo -->
+          <a href="index.html"
+            ><img alt="WorldBooks" src="pictures/WorldBooks.png"
+          /></a>
+          <!-- Search -->
+          <form>
+            <input type="text" placeholder="What are you looking for?" />
+            <button class="search-btn" type="submit">
+              <object data="pictures/search.svg"></object>
+            </button>
+            <div class="search-result-box">
+              <ul>
+                <li>
+                  <a href="it-ends-at-midnight.html">It Ends At Midnight</a>
+                </li>
+                <li><a href="romance.html">Romance</a></li>
+                <li><a href="it-ends-at-midnight.html">Three Assasins</a></li>
+              </ul>
             </div>
+          </form>
+          <!-- Signing in -->
+          <div class="cart-btn">
+            <a href="cart.html">
+              <img src="pictures/cart.svg" alt="Cart" class="cart-btn-img" />
+            </a>
+          </div>
         </nav>
-    </div>
-</header>
+      </div>
+    </header>
 
-<header class="desktop">
-    <div class="container">
+    <header class="desktop">
+      <div class="container">
         <!-- Menu -->
         <nav class="header-container-elastic">
-            <ul class="menu">
-                <li><a href="romance.html">Romance</a></li>
-                <li><a href="romance.html">Detective</a></li>
-                <li><a href="romance.html">Fiction</a></li>
-                <li><a href="romance.html">Young adult </a></li>
-                <li><a href="romance.html">Education</a></li>
-            </ul>
+          <ul class="menu">
+            <li><a href="romance.html">Romance</a></li>
+            <li><a href="romance.html">Detective</a></li>
+            <li><a href="romance.html">Fiction</a></li>
+            <li><a href="romance.html">Young adult </a></li>
+            <li><a href="romance.html">Education</a></li>
+          </ul>
         </nav>
-    </div>
-</header>
-<!-- Main content -->
-<main class="cart main">
-    <!--    navigation-->
-    <nav class="cart nav">
+      </div>
+    </header>
+    <!-- Main content -->
+    <main class="cart main">
+      <!--    navigation-->
+      <nav class="cart nav">
         <div class="nav box active">
-            <div class="nav dot ">1</div>
-            <div class="nav title">Cart</div>
+          <div class="nav dot">1</div>
+          <div class="nav title">Cart</div>
         </div>
 
         <div class="nav dash"></div>
 
         <div class="nav box">
-            <div class="nav dot">2</div>
-            <div class="nav title">Address</div>
+          <div class="nav dot">2</div>
+          <div class="nav title">Address</div>
         </div>
 
         <div class="nav dash"></div>
 
         <div class="nav box">
-            <div class="nav dot">3</div>
-            <div class="nav title">Payment</div>
+          <div class="nav dot">3</div>
+          <div class="nav title">Payment</div>
         </div>
-    </nav>
-    <section>
+      </nav>
+      <section>
         <h2>Items in cart</h2>
         <div class="cart items">
-            <div class="cart item">
-                <div class="cart book">
-                    <div class="item image">
-                        <img class="image source" alt="book cover" src="https://picsum.photos/130/200">
-                    </div>
-                    <div class="item info">
-                        <h3>Game of Thrones</h3>
-                        <span>George Martin</span>
-                        <span>20394729836429834</span>
-                    </div>
-                </div>
-                <div class="cart price">
-                    <div class="price delivery">
-                        <h4>Available now</h4>
-                        <h6>at central store</h6>
-                    </div>
-                    <div class="price book">
-                        <h4>223.99$</h4>
-                    </div>
-                </div>
+          <div class="cart item">
+            <div class="cart book">
+              <div class="item image">
+                <img
+                  class="image source"
+                  alt="book cover"
+                  src="https://picsum.photos/130/200"
+                />
+              </div>
+              <div class="item info">
+                <h3>It Ends At Midnight</h3>
+                <span>Tyce, Harriet</span>
+                <span>1472280113</span>
+              </div>
             </div>
-            <div class="cart item">
-                <div class="cart book">
-                    <div class="item image">
-                        <img class="image source" alt="book cover" src="https://picsum.photos/130/200">
-                    </div>
-                    <div class="item info">
-                        <h3>Game of Thrones</h3>
-                        <span>George Martin</span>
-                        <span>20394729836429834</span>
-                    </div>
-                </div>
-                <div class="cart price">
-                    <div class="price delivery">
-                        <h4>Available now</h4>
-                        <h6>at central store</h6>
-                    </div>
-                    <div class="price book">
-                        <h4>223.99$</h4>
-                    </div>
-                </div>
+            <div class="cart price">
+              <div class="price delivery">
+                <h4>Available now</h4>
+                <h6>at central store</h6>
+              </div>
+              <div class="price book">
+                <h4>200 CZK</h4>
+              </div>
             </div>
-            <div class="cart item">
-                <div class="cart book">
-                    <div class="item image">
-                        <img class="image source" alt="book cover" src="https://picsum.photos/130/200">
-                    </div>
-                    <div class="item info">
-                        <h3>Game of Thrones</h3>
-                        <span>George Martin</span>
-                        <span>20394729836429834</span>
-                    </div>
-                </div>
-                <div class="cart price">
-                    <div class="price delivery">
-                        <h4>Available now</h4>
-                        <h6>at central store</h6>
-                    </div>
-                    <div class="price book">
-                        <h4>223.99$</h4>
-                    </div>
-                </div>
+          </div>
+          <div class="cart item">
+            <div class="cart book">
+              <div class="item image">
+                <img
+                  class="image source"
+                  alt="book cover"
+                  src="https://picsum.photos/130/200"
+                />
+              </div>
+              <div class="item info">
+                <h3>It Ends At Midnight</h3>
+                <span>Tyce, Harriet</span>
+                <span>1472280113</span>
+              </div>
             </div>
-            <div class="cart item">
-                <div class="cart book">
-                    <div class="item image">
-                        <img class="image source" alt="book cover" src="https://picsum.photos/130/200">
-                    </div>
-                    <div class="item info">
-                        <h3>Game of Thrones</h3>
-                        <span>George Martin</span>
-                        <span>20394729836429834</span>
-                    </div>
-                </div>
-                <div class="cart price">
-                    <div class="price delivery">
-                        <h4>Available now</h4>
-                        <h6>at central store</h6>
-                    </div>
-                    <div class="price book">
-                        <h4>223.99$</h4>
-                    </div>
-                </div>
+            <div class="cart price">
+              <div class="price delivery">
+                <h4>Available now</h4>
+                <h6>at central store</h6>
+              </div>
+              <div class="price book">
+                <h4>200 CZK</h4>
+              </div>
             </div>
-            <div class="cart item">
-                <div class="cart book">
-                    <div class="item image">
-                        <img class="image source" alt="book cover" src="https://picsum.photos/130/200">
-                    </div>
-                    <div class="item info">
-                        <h3>Game of Thrones</h3>
-                        <span>George Martin</span>
-                        <span>20394729836429834</span>
-                    </div>
-                </div>
-                <div class="cart price">
-                    <div class="price delivery">
-                        <h4>Available now</h4>
-                        <h6>at central store</h6>
-                    </div>
-                    <div class="price book">
-                        <h4>223.99$</h4>
-                    </div>
-                </div>
+          </div>
+          <div class="cart item">
+            <div class="cart book">
+              <div class="item image">
+                <img
+                  class="image source"
+                  alt="book cover"
+                  src="https://picsum.photos/130/200"
+                />
+              </div>
+              <div class="item info">
+                <h3>It Ends At Midnight</h3>
+                <span>Tyce, Harriet</span>
+                <span>1472280113</span>
+              </div>
             </div>
-
+            <div class="cart price">
+              <div class="price delivery">
+                <h4>Available now</h4>
+                <h6>at central store</h6>
+              </div>
+              <div class="price book">
+                <h4>200 CZK</h4>
+              </div>
+            </div>
+          </div>
+          <div class="cart item">
+            <div class="cart book">
+              <div class="item image">
+                <img
+                  class="image source"
+                  alt="book cover"
+                  src="https://picsum.photos/130/200"
+                />
+              </div>
+              <div class="item info">
+                <h3>It Ends At Midnight</h3>
+                <span>Tyce, Harriet</span>
+                <span>1472280113</span>
+              </div>
+            </div>
+            <div class="cart price">
+              <div class="price delivery">
+                <h4>Available now</h4>
+                <h6>at central store</h6>
+              </div>
+              <div class="price book">
+                <h4>200 CZK</h4>
+              </div>
+            </div>
+          </div>
+          <div class="cart item">
+            <div class="cart book">
+              <div class="item image">
+                <img
+                  class="image source"
+                  alt="book cover"
+                  src="https://picsum.photos/130/200"
+                />
+              </div>
+              <div class="item info">
+                <h3>It Ends At Midnight</h3>
+                <span>Tyce, Harriet</span>
+                <span>1472280113</span>
+              </div>
+            </div>
+            <div class="cart price">
+              <div class="price delivery">
+                <h4>Available now</h4>
+                <h6>at central store</h6>
+              </div>
+              <div class="price book">
+                <h4>200 CZK</h4>
+              </div>
+            </div>
+          </div>
         </div>
 
         <div class="cart end">
-            <a href="delivery.html" class="cart button">
-                Continue
-            </a>
+          <a href="delivery.html" class="cart button"> Continue </a>
         </div>
-
-    </section>
-</main>
-<div class="footer">
-    <div class="container">
+      </section>
+    </main>
+    <div class="footer">
+      <div class="container">
         <div class="footer-content">
-            <div class="footer-content-about">
-                <h4>Worldbooks</h4>
-                <p>
-                    Welcome to WorldBook - your digital haven for literary treasures. Discover a diverse collection
-                    of
-                    books, from bestsellers to hidden gems, all just a click away. Whether you're seeking knowledge,
-                    adventure, or inspiration, our online bookstore offers an easy and convenient way to explore,
-                    purchase, and immerse yourself in the world of words. Start your reading journey with us today
-                </p>
-            </div>
-            <div class="footer-content-basic">
-                <h4>Worldbooks</h4>
-                <p><a href="about.html">About us</a></p>
-                <p><a href="career.html">Career</a></p>
-            </div>
-            <div class="footer-content-contacts">
-                <h4 class="time">Mon - Fri</h4>
-                <h4 class="time">8:00 - 18:00</h4>
-                <h4 class="mobile">+420&nbsp;277&nbsp;032&nbsp;342</h4>
-                <p>
-                    We respond within <br>
-                    24 hours
-                </p>
-                <p><a href="#">info@worldbooks.cz</a></p>
-            </div>
+          <div class="footer-content-about">
+            <h4>Worldbooks</h4>
+            <p>
+              Welcome to WorldBook - your digital haven for literary treasures.
+              Discover a diverse collection of books, from bestsellers to hidden
+              gems, all just a click away. Whether you're seeking knowledge,
+              adventure, or inspiration, our online bookstore offers an easy and
+              convenient way to explore, purchase, and immerse yourself in the
+              world of words. Start your reading journey with us today
+            </p>
+          </div>
+          <div class="footer-content-basic">
+            <h4>Worldbooks</h4>
+            <p><a href="about.html">About us</a></p>
+            <p><a href="career.html">Career</a></p>
+          </div>
+          <div class="footer-content-contacts">
+            <h4 class="time">Mon - Fri</h4>
+            <h4 class="time">8:00 - 18:00</h4>
+            <h4 class="mobile">+420&nbsp;277&nbsp;032&nbsp;342</h4>
+            <p>
+              We respond within <br />
+              24 hours
+            </p>
+            <p><a href="#">info@worldbooks.cz</a></p>
+          </div>
         </div>
-    </div>
-    <footer>
-        <hr>
+      </div>
+      <footer>
+        <hr />
         ©2023 Worldbooks s.r.o.
         <p>This website created</p>
         <p>due to study purposes</p>
-    </footer>
-</div>
-</body>
+      </footer>
+    </div>
+  </body>
 </html>
