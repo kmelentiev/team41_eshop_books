@@ -86,16 +86,31 @@ input {
 	background: var(--white);
 }
 
-form .search-btn {
+/* form .search-btn {
 	height: 25px;
 	width: 25px;
 	position: absolute;
 	top: 4px;
 	right: 8px;
 	cursor: pointer;
-	/* background-color: transparent; */
-	/* background: url(pictures/search.svg); */
-	background: #e9f3ff url("pictures/search.svg") center no-repeat;
+	background: #e9f3ff url(./pictures/search.png) center no-repeat;
+} */
+
+.search-btn {
+	/* border: 0 none; */
+	position: absolute;
+	/* background: #1f7f5c url(./pictures/search.png) center no-repeat; */
+	/* background: center / contain no-repeat url("./pictures/search.png"), #1f7f5c 35% url("../../media/examples/lizard.png"); */
+	/* background: no-repeat url("./pictures/search.png"); */
+	background: no-repeat center/40% url("./pictures/search.png");
+	/* background: transparent center / contain no-repeat url("./pictures/search.png"); */
+	width: 50px;
+	float: left;
+	right: -1px;
+	/* padding: 0; */
+	text-align: center;
+	height: 32px;
+	cursor: pointer;
 }
 
 object {
@@ -187,7 +202,7 @@ ul li:not(:last-of-type) {
 }
 
 /* Nav menu Responsiveness */
-@media (min-width: 950px) {
+@media (min-width: 970px) {
 	.header-container-elastic {
 		flex-direction: row;
 	}
