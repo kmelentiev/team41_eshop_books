@@ -97,26 +97,14 @@ input {
 } */
 
 .search-btn {
-	/* border: 0 none; */
 	position: absolute;
-	/* background: #1f7f5c url(./pictures/search.png) center no-repeat; */
-	/* background: center / contain no-repeat url("./pictures/search.png"), #1f7f5c 35% url("../../media/examples/lizard.png"); */
-	/* background: no-repeat url("./pictures/search.png"); */
 	background: no-repeat center/40% url("./pictures/search.png");
-	/* background: transparent center / contain no-repeat url("./pictures/search.png"); */
 	width: 50px;
 	float: left;
-	right: -1px;
-	/* padding: 0; */
+	right: 0px;
 	text-align: center;
 	height: 32px;
 	cursor: pointer;
-}
-
-object {
-	object-fit: contain;
-	height: 16px;
-	align-items: center;
 }
 
 .cart-btn-img {
@@ -760,7 +748,7 @@ main.delivery {
 }
 
 .nav.dot {
-	background: var(--dark-grey-brown);
+	background: var(--pale-grey-brown);
 	color: var(--white);
 	width: 30px;
 	height: 30px;
@@ -769,6 +757,10 @@ main.delivery {
 	display: flex;
 	justify-content: center;
 	align-items: center;
+}
+
+.nav.box.active .nav.dot {
+	background: var(--dark-grey-brown);
 }
 
 .nav.title {
@@ -780,11 +772,11 @@ main.delivery {
 	display: flex;
 	flex-direction: column;
 	align-items: center;
-	opacity: 0.5;
+	/* opacity: 0.5; */
 }
 
 .nav.box.active {
-	opacity: 1;
+	/* opacity: 1; */
 }
 
 .nav.dash {
